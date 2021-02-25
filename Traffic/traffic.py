@@ -4,6 +4,7 @@ import os
 from collections import Counter
 
 #global vars
+sched=[]
 max_green_window=2
 print(os.chdir("/Users/ketkiambekar/Documents/GitHub-ketkiambekar/GoogleHashCode/Traffic"))
 #part 1: Read input into proper DSs
@@ -51,13 +52,17 @@ def main():
     #Second 0:
     pos=[]
     for k,v in cars.items():
-        pos.append(v[0][0])
+        pos.append(v[0][0])    
+        if k==starter[0]:
+            starter=v[0][0]
+            print(k, v, starter)
         cars[k].pop(0)
     
     for k,v in Counter(pos).items():
         snapshot[0][int(k)]=int(v)
+        sched
     
-    print(snapshot)
+   
 
     #One big for loop for calculating whats happening each second:
     #for i in range(1,time):
