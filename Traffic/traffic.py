@@ -27,11 +27,28 @@ def main():
     #car paths
     cars={}
     for i in range(n_streets+1,n_streets+n_cars+1 ):
-        cars[i]=
+        temp=[]
+        path=inp[i].strip().split(" ")[1:]
+        for n in path:
+            temp.append(streets[n])
+        cars[i]=temp
+        #print(cars, temp, path)
+
+
+    #Calculate Shortest Path
+    starter=None
+    for k,v in cars.items():
+        temp = np.array(cars[k]).astype(np.float)
+        distance=np.sum(temp[:,2])
+        if starter == None: starter=(k, distance)
+        elif starter[0]>distance:starter=(k, distance)
+
+
+
 
 
     #create Numpy Array of snapshots in time where axis 0 = Seconds, axis 1= Intersections, and cells will contain car_number
-    snapshot = np.zeroes
+    #snapshot = np.zeroes
 
 
     
