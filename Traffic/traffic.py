@@ -60,7 +60,7 @@ def main():
     
     for k,v in Counter(pos).items():
         snapshot[0][int(k)]=int(v)
-        sched
+        #sched
     
    
 
