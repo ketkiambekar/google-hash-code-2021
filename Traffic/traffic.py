@@ -6,7 +6,7 @@ from collections import Counter
 #global vars
 sched=[]
 max_green_window=2
-print(os.chdir("/Users/ketkiambekar/Documents/GitHub-ketkiambekar/GoogleHashCode/Traffic"))
+#print(os.chdir("/Users/ketkiambekar/Documents/GitHub-ketkiambekar/GoogleHashCode/Traffic"))
 #part 1: Read input into proper DSs
 
 def main():
