@@ -1,6 +1,7 @@
 import numpy as np
 import sys
 import os
+from collections import Counter
 
 #global vars
 max_green_window=2
@@ -42,13 +43,25 @@ def main():
         distance=np.sum(temp[:,2])
         if starter == None: starter=(k, distance)
         elif starter[0]>distance:starter=(k, distance)
-
-
-
-
+    print(starter)
 
     #create Numpy Array of snapshots in time where axis 0 = Seconds, axis 1= Intersections, and cells will contain car_number
-    #snapshot = np.zeroes
+    snapshot = np.zeros(time*n_intersections).reshape(time, n_intersections)
+
+    #Second 0:
+    pos=[]
+    for k,v in cars.items():
+        pos.append(v[0][0])
+        cars[k].pop(0)
+    
+    for k,v in Counter(pos).items():
+        snapshot[0][int(k)]=int(v)
+    
+    print(snapshot)
+
+    #One big for loop for calculating whats happening each second:
+    #for i in range(1,time):
+
 
 
     
