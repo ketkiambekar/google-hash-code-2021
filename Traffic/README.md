@@ -1,4 +1,5 @@
-This was the qualifying challenge at the google hash code 2021. 
+This was the qualifying challenge at the google hash code 2021.  
+The problem statement can be viewed at 
 
 ### Software Requirements:
 Python3.x
