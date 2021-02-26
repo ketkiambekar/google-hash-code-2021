@@ -1,5 +1,5 @@
 This was the qualifying challenge at the google hash code 2021.  
-The problem statement can be viewed at 
+The problem statement is defined in the hashcode_2021_online_qualifications.pdf file.
 
 ### Software Requirements:
 Python3.x
