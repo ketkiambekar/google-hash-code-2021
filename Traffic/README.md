@@ -6,4 +6,4 @@ Python3.x
 
 ### Instructions to run
 1) Clone the repository
-2) Execute the command  "python traffic.py a.text". Substitute "a.txt" with other inputfile names for each run.
+2) Execute the command  "python traffic.py a.txt". Substitute "a.txt" with other inputfile names for each run.
