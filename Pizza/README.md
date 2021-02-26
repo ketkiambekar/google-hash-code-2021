@@ -6,4 +6,4 @@ Python3.x
 
 Instructions to run
 Clone the repository
-Execute the command "python pizza.py a.txt". Substitute "a.txt" with other inputfile names for each run.
+Execute the command "python pizza.py a_example". Substitute "a_example" with other inputfile names for each run.
